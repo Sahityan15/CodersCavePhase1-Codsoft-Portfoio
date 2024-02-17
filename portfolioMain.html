@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creative Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Edu+TAS+Beginner&family=Girassol&family=Libre+Baskerville&family=Nosifer&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Edu+TAS+Beginner&family=Girassol&family=Libre+Baskerville&family=Maven+Pro&family=Nosifer&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Girassol&family=Libre+Baskerville&family=Maven+Pro&family=Nosifer&display=swap');
+        body{
+        background-color:black;
+        margin: 0;
+        } 
+        .whole{
+        width: 100%;
+        height: 800px;
+        background-color: #ccc;
+        border-bottom-left-radius:500px;
+        
+        }
+        .logo{
+        position: relative;
+        height: 50px;
+        width: 50px;
+        float: left;
+        }
+        .navbar-right {
+        position: absolute;
+        right: 50px;
+        top: 20px;
+        float: right;
+        background-color: #ccc;
+        }
+        .navbar-right i {
+        font-size: 30px;
+        color: black;
+        }
+        .navbar-right a{
+
+        text-decoration: none;
+        padding: 10px;    
+        }
+        .navbar-right a:hover {
+        color: #ccc;
+        }
+        .pic{
+        position: relative;
+        left: -135px;
+        border-radius: 200px ;
+        }
+        .picin{
+        border-radius: 1050px;
+        }
+        .container {
+        height: auto;
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        background-color: #ccc;
+        }
+        .line{
+        position: absolute;
+        top: 150px;
+        left: 10px;
+        height: 10px;
+        width: 400px;
+        background-color: black;
+        }
+        .name{
+        font-family: 'Nosifer';
+        font-size: 100px;
+        }
+        .mm{
+        position: relative;
+        top: 300px;
+        width: 500px;
+        margin-bottom:50px;
+        }
+        .pic {
+        position: relative;
+        top: 150px;
+        right: 100px;
+        width: 600px;
+        max-width: 600px;
+        height: 550px;
+        border-radius: 800px;
+        }
+        .line2{
+        position: absolute;
+        top: 550px;
+        left: 1000px;
+        height: 10px;
+        width: 400px;
+        background-color: black;
+        }
+        h1 {
+        position: absolute;
+        top: 50px;
+        left: 640px;
+        font-size: 150px;
+        background: none;
+        }
+        .container2{
+        background-color: black;
+        margin: 100px;
+        }
+        .certi-head{
+        position: absolute;
+        top: 1600px;
+        left: 100px;
+        font-family: 'Edu TAS Beginner', cursive;
+        font-size: 50px;
+        color: white;
+        }
+        p{
+        color: white;
+        font-size: 25px;
+        }
+        .oval-button {
+        background-color: rgb(129, 123, 123);
+        color: rgb(5, 4, 4);
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.2s;
+        font-family: 'Edu TAS Beginner', cursive;
+        }
+        .aboutme{
+        color: white;
+        font-size: 90px;
+        font-family: 'Edu TAS Beginner', cursive;
+        }
+        .oval-button:hover {
+        background-color: #ccc;
+        }
+        .project-head{
+        position: absolute;
+        top:2300px;
+        left: 10px;
+        font-size: 90px;
+        color: white;
+        margin-top: 50px;
+        }
+        .pro1{
+        font-size: 60px;
+        position: relative;
+        left: 0px;
+        top: 20px;
+        color: white;
+        }
+        .carousel-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 500px;
+        }
+        .text {
+        flex: 1;
+        padding: 0px;
+        margin-left: 120px;
+        font-family: 'Edu TAS Beginner', cursive;
+        }
+        .carousel {
+        flex: 1;
+        overflow: hidden;
+        width: 100%;
+        height: 600px;
+        }
+        .carousel-inner {
+        display: flex;
+        animation: slide 4s infinite;
+        }
+        .carousel-item {
+        flex: 0 0 100%;
+        transition: transform 1s ease-in-out;
+        width:fit-content; /* Set the square size here */
+        height: 400px; /* Set the square size here */
+        }
+        img {
+        width: fit-content;
+        height: 100%;
+        /* Maintain image aspect ratio and cover the square container */
+        }
+        @keyframes slide {
+        0%, 100% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(-100%);
+        }
+        75% {
+            transform: translateX(-100%);
+        }
+        }
+        .new{
+        background-color: #333;  
+        }
+        .container1 {
+        height: 100%;
+        padding: 30px;
+        background-color:#ccc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .final{
+        width: 100%;
+        height: 600px;
+        border-bottom: 150px;
+        }
+        .bg{
+        background-image: url("https://images.pexels.com/photos/2034373/pexels-photo-2034373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        width: 800px;
+        height: 650px;
+        position: absolute;
+        }
+        h1 {
+        text-align: center;
+        color: #333;
+        font-family:Arial, Helvetica, sans-serif;
+        }
+        form {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        gap: 30px;
+        float: right;
+        margin: 50px;
+        }
+        label {
+        font-weight: bold;
+        color: #333;
+        }
+        input, textarea {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 14px;
+        }
+        .cm{
+        position: absolute;
+        top: 3900px;
+        left: 20px;
+        font-size: 100px;
+        color: aliceblue;
+        }
+        button {
+        padding: 8px 16px;
+        background-color: #090909;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        }
+        button:hover {
+        background-color: #9fa89f;
+        }
+</style>
+</head>
+<body>  
+<div class="whole">
+  <div class="container">
+        <div class="navbar-right">
+            <a  href="https://github.com/Sahityan15" ><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sahityan-s-127526228/"><i class="fa fa-linkedin"></i></a>
+        </div>
+    <div class="line"></div>
+    <div class="pic">
+    <img class="picin" src="Mypic01.jpg" alt="Creative Portfolio">
+    </div>
+    <h1 class="name">Hi I'm Sahityan..</h1>
+    <div class="line2"></div>
+  </div>
+</div>
+  <div class="container2">
+    <h2 class="aboutme">About me</h2>
+    <p>Hi, I'm Aprana, a 20-year-old passionate developer and student from Tamil Nadu. I'm always eager to learn new things and explore new technologies. I'm also a strong believer in the power of open source software and the importance of giving back to the community.
+
+      , and I've been hooked ever since. I love the challenge of solving problems and building things that people can use. I'm also fascinated by the way that technology can be used to make a positive impact on the world.
+        
+        I'm currently studying Artificial intelligence and data science. In my spare time, I enjoy working on open source projects, reading tech blogs, and attending hackathons. I'm also a big fan of music and movies.
+        
+        I'm excited to be a part of the tech community, and I'm looking forward to making a difference in the world through my work.
+        
+        I hope this passage is good. I tried to make it informative and engaging, and to highlight your passion for development and learning. I also included some personal details to make the passage more relatable. 
+        </p>
+    <button type="button" class="oval-button">Contact me</button>
+    <button type="button" class="oval-button">Download CV</button>
+   </div> 
+        <h1 class="certi-head">Certificates</h1>
+        <div class="imgs">
+        <img class="mm" src="IoT NPTEL certificate.jpg">
+        <img class="mm" src="Java NPTEL certificate.jpg">
+        <img class="mm" src="Codsoft Internship certificate.jpg">
+        </div>
+<div class="new">
+    <svg viewBox="0 0 500 200">
+        <path d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0"></path>
+    </svg>
+    <h1 class="project-head">My Projects..</h1>
+    <div class="carousel-container">
+        <div class="text">
+            <h2 class="pro1">UI/UX Designing</h2>
+            <p>Design a simple sign up flow page</p>
+        </div>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="pro1.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="pro11.jpg" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="pro12.jpg" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="pro2.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="pro21.jpg" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="pro22.jpg" alt="Image 3">
+                </div>
+            </div>
+        </div>
+        <div class="text">
+            <h2 class="pro1">UI/UX Designing</h2>
+            <p>Design a user friendly Restaurant menu</p>
+        </div>
+    </div>
+    <div class="carousel-container">
+        <div class="text">
+            <h2 class="pro1">UI/UX Designing</h2>
+            <p>Design a user friendly e-commerce website</p>
+        </div>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="pro31.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="pro32.jpg" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="pro33.jpg" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg"></div>
+<div class="final">
+    <div class="container1">
+        <h1 class="cm">Contact Me</h1>
+        <form action="/submit_form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+    <script>
+        // JavaScript to control the automatic slide change
+        let slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            let i;
+            const slides = document.querySelectorAll(".carousel-item");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.transform = "translateX(-100%)";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.transform = "translateX(0)";
+            setTimeout(showSlides, 4000); // Change slide every 4 seconds
+        }
+    </script>
+</body>
+</html>
